@@ -1,0 +1,19 @@
+.main {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   margin: 50px auto;
+}
+
+.mainseco {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+}
+
+.mainseco__img {
+   max-width: 100%;
+}
