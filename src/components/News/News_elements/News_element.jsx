@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './News_element.module.css'
-
+import { NavLink } from 'react-router-dom';
 const News_element = (props) => {
     return (
         <div className={s.desc}>
@@ -9,8 +9,9 @@ const News_element = (props) => {
                 {props.name}
                 <div>{props.date}</div>
             </div>
-            <button className={s.border}>Read</button>
+            <NavLink to={'/news/' + props.id} className={s.border}>Read</NavLink>
+           
         </div>
     )
 }
-export default News_element
+export default News_element;

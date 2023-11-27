@@ -2,10 +2,9 @@ import React from 'react';
 import s from './Main.module.css'
 import banner from '../image/Banner.png'
 
-const Main = (props) => {
+const Main = () => {
     return (
-        <div>
-            <div className={s.main}>
+        <div className={s.main}>
                 <div className={s.mainseco}>
                     <div>
                         <h2>Academic degree</h2>
@@ -35,7 +34,7 @@ const Main = (props) => {
                 </div>
             </div>
 
-        </div>
+
     )
 }
 
