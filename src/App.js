@@ -17,7 +17,7 @@ const App = (props) => {
       <div className='app-wrapper-content'>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/news" element={<News state={props.state.NewsPage} />} />
+          <Route path="/news" element={<News state={props.state.NewsPage} addNews={props.addNews} />} />
           <Route path="/news/:id" element={<News_in state={props.state.NewsPage}/>} />
         </Routes>
       </div>

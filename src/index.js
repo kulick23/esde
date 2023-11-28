@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import state from './redux/State'
+import { addNews } from './redux/State';
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App state={state}/>
+      <App state={state} addNews={addNews}/>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
