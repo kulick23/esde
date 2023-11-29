@@ -1,4 +1,4 @@
-
+import { renderEntireTree } from "../render";
 let state = {
 
   NewsPage: {
@@ -23,9 +23,11 @@ export let addNews = (newname, newdate, newimg, newdesc, newtext) =>{
     text: newtext
   }
   state.NewsPage.news.push(newNews);
+  renderEntireTree(state);
 }
 export let removeNews = (newsId) => {
   state.NewsPage.news = state.NewsPage.news.filter(newsItem => newsItem.id !== newsId);
+  renderEntireTree(state);
 }
 export default state;
 

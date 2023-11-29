@@ -38,28 +38,27 @@
   width: 100px;
   height: 30px;
   margin-top: 15px;
-
-
 }
-
-.border {
+.button_box{
+  text-align: center;
+}
+.button {
   text-decoration: none;
   display: inline-block;
   padding: 10px 30px;
   position: relative;
   border: 2px solid;
-  border-image: linear-gradient(180deg, #005AFF, #0080FF, #00A6FF, #00CCFF, #00F2FF);
   font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
   color: white;
-  border-image-slice: 1;
   transition: .4s;
   background-color: #34353a;
   box-sizing: border-box;
   text-align: center;
-  margin: 10px auto;
+  margin: 10px 
 }
 
-.border:after {
+.button:after {
   content: "";
   position: absolute;
   top: 0;
@@ -72,8 +71,21 @@
   border: 2px solid rgba(0, 0, 0, 0);
   transition: .4s;
 }
-
-.border:hover:after {
+.border_red{
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+}
+.border_red:hover:after {
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+}
+.border_blue{
+  border-image: linear-gradient(180deg, #005AFF, #0080FF, #00A6FF, #00CCFF, #00F2FF);
+  border-image-slice: 1;
+}
+.border_blue:hover:after {
   border-image: linear-gradient(180deg, #005AFF, #0080FF, #00A6FF, #00CCFF, #00F2FF);
   border-image-slice: 1;
   width: calc(100% - 10px);
