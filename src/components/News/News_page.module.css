@@ -1,11 +1,4 @@
-.news {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-row-gap: 50px;
-   grid-column-gap: 5%;
-}
-
-.text {
+.title {
    font-family: 'Montserrat', sans-serif;
    text-transform: uppercase;
    text-align: center;
@@ -13,7 +6,15 @@
    font-size: 45px;
 }
 
-.addnews {
+.news {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-row-gap: 50px;
+   grid-column-gap: 5%;
+}
+
+
+.add_news {
    height: 85%;
    border: none;
    cursor: pointer;

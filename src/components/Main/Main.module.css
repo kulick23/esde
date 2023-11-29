@@ -7,13 +7,13 @@
    margin: 50px auto;
 }
 
-.mainseco {
+.secondary {
    width: 100%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
 
 }
 
-.mainseco__img {
+.secondary img {
    max-width: 100%;
 }

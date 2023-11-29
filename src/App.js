@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import Header from './components//Header/Header';
-import News from './components/News/News';
+import News_page from './components/News/News_page';
 import { Routes, Route } from 'react-router-dom';
 import Main from './components/Main/Main';
-import News_in from './components/News/News_in/News_in';
+import News from './components/News/News_block/News';
 
 const App = (props) => {
 
@@ -15,8 +15,8 @@ const App = (props) => {
       <div className='app-wrapper-content'>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/news" element={<News state={props.state.NewsPage} addNews={props.addNews} removeNews={props.removeNews} />} />
-          <Route path="/news/:id" element={<News_in state={props.state.NewsPage} />} />
+          <Route path="/news" element={<News_page state={props.state.NewsPage} addNews={props.addNews} removeNews={props.removeNews} />} />
+          <Route path="/news/:id" element={<News state={props.state.NewsPage} />} />
         </Routes>
       </div>
     </div>

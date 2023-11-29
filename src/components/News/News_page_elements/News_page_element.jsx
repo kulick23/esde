@@ -1,14 +1,16 @@
 import React from 'react';
-import s from './News_element.module.css'
+import s from './News_page_element.module.css'
 import { NavLink } from 'react-router-dom';
-const News_element = (props) => {
+const News_page_element = (props) => {
     const handleRemove = () => {
         props.removeNews(props.id)
     };
     return (
-        <div className={s.desc}>
-            <div className={s.item}> <img src={props.img} /> </div>
-            <div className={s.text}>
+        <div className={s.block}>
+            <div className={s.banner}>
+                <img src={props.img} />
+            </div>
+            <div className={s.title}>
                 {props.name}
                 <div>{props.date}</div>
             </div>
@@ -20,4 +22,4 @@ const News_element = (props) => {
         </div>
     )
 }
-export default News_element;
+export default News_page_element;

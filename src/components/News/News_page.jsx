@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import s from './News.module.css'
-import News_element from './News_elements/News_element';
+import s from './News_page.module.css'
+import News_page_element from './News_page_elements/News_page_element';
 
-const News = (props) => {
+const News_page = (props) => {
     const [isAdding, setIsAdding] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
@@ -14,7 +14,7 @@ const News = (props) => {
     const [selectedFilter, setSelectedFilter] = useState('all');
 
     let NewsItem = props.state.news
-        .map(p => <News_element key={p.id} img={p.img} id={p.id} date={p.date} name={p.name} type={p.type} removeNews={props.removeNews} />)
+        .map(p => <News_page_element key={p.id} img={p.img} id={p.id} date={p.date} name={p.name} type={p.type} removeNews={props.removeNews} />)
         .reverse();
     let NewNewsName = React.createRef()
     let NewNewsDate = React.createRef()
@@ -69,7 +69,7 @@ const News = (props) => {
 
     return (
         <div>
-            <div className={s.text}>
+            <div className={s.title}>
                 News from EHU ESDE
                 <div>
                     <select value={selectedFilter} onChange={handleFilterChange}>
@@ -83,7 +83,7 @@ const News = (props) => {
             <hr></hr>
             <div className={s.news}>
                 <button
-                    className={s.addnews}
+                    className={s.add_news}
                     onClick={handleAddNewsClick}
                 >
                     add news
@@ -111,4 +111,4 @@ const News = (props) => {
     );
 };
 
-export default News;
+export default News_page;
