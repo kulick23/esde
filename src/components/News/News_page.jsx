@@ -89,10 +89,11 @@ const News_page = (props) => {
                     add news
                 </button>
                 {isAdding && (
-                    <div className={s.overlay}>
-                        <form onSubmit={handleFormSubmit} className={s.addNewsForm}>
-                            <input ref={NewNewsName} type="text" name="name" value={formData.name} onChange={handleInputChange} placeholder="Name" />
+                        <form onSubmit={handleFormSubmit} className={s.form}>
+                            <div className={s.form_display}>
+                            <input ref={NewNewsName} type="text" name="name" value={formData.name} onChange={handleInputChange} placeholder="Title" />
                             <input ref={NewNewsDate} type="text" name="date" value={formData.date} onChange={handleInputChange} placeholder="Date" />
+                            <input ref={NewNewsImg} type="text" name="imageUrl" value={formData.imageUrl} onChange={handleInputChange} placeholder="Image URL" />
                             <select ref={NewNewsType} name="type" value={formData.type} onChange={handleInputChange}>
                                 <option value="University">University</option>
                                 <option value="Event">Event</option>
@@ -100,10 +101,10 @@ const News_page = (props) => {
                             </select>
                             <textarea ref={NewNewsDesc} name="description" value={formData.description} onChange={handleInputChange} placeholder="Description" />
                             <textarea ref={NewNewsText} name="text" value={formData.text} onChange={handleInputChange} placeholder="Text" />
-                            <input ref={NewNewsImg} type="text" name="imageUrl" value={formData.imageUrl} onChange={handleInputChange} placeholder="Image URL" />
-                            <button type="submit">Submit</button>
+                            </div>
+                            <button className={s.form_button} type="submit">Submit</button>
                         </form>
-                    </div>
+                
                 )}
                 {filteredNews}
             </div>

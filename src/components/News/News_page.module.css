@@ -25,3 +25,39 @@
    color: white;
    background-color: rgba(0, 21, 41, 0.8);
 }
+
+.form {
+   background-color: rgba(169, 169, 169, 0.2);
+   height: 85%;
+   text-align: center;
+}
+.form input, select, textarea{
+   border: none;
+  background-color: lightgray;
+  resize: none;
+}
+.form_display{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-row-gap: 50px;
+   grid-column-gap: 10%;
+   height: 70%;
+   padding: 10px;
+}
+.form_button{
+   text-decoration: none;
+   display: inline-block;
+   padding: 10px 30px;
+   position: relative;
+   border: 2px solid;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 15px;
+   color: white;
+   transition: .4s;
+   background-color: #34353a;
+   box-sizing: border-box;
+   margin: 10px;
+   border-image: linear-gradient(180deg, #005AFF, #0080FF, #00A6FF, #00CCFF, #00F2FF);
+   border-image-slice: 1;
+   cursor: pointer;
+}
