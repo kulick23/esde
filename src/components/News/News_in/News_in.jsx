@@ -6,7 +6,7 @@ const News_in = (props) => {
     let lastPartOfURL = currentURL.substring(currentURL.lastIndexOf('/') + 1);
     let currentID = parseInt(lastPartOfURL);
     let filteredNews = props.state.news.filter(p => p.id === currentID);
-    let NewsItem = filteredNews.map(p => <SingleNewsPage key={p.id} img={p.img} id={p.id} date={p.date} name={p.name} desc={p.desc} text={p.text}/>)
+    let NewsItem = filteredNews.map(p => <SingleNewsPage key={p.id} img={p.img} id={p.id} date={p.date} name={p.name} desc={p.desc} text={p.text} />)
 
     return (
         <div>

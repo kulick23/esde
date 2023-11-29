@@ -13,10 +13,10 @@ const News_element = (props) => {
                 <div>{props.date}</div>
             </div>
             <div className={s.button_box}>
-            <NavLink to={'/news/' + props.id} className={[s["button"],s["border_blue"]].join(" ")}>Read</NavLink>
-            <button onClick={handleRemove} className={[s["button"],s["border_red"]].join(" ")}>Remove</button>
+                <NavLink to={'/news/' + props.id} className={[s["button"], s["border_blue"]].join(" ")}>Read</NavLink>
+                <button onClick={handleRemove} className={[s["button"], s["border_red"]].join(" ")}>Remove</button>
             </div>
-           
+
         </div>
     )
 }

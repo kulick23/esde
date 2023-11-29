@@ -39,9 +39,11 @@
   height: 30px;
   margin-top: 15px;
 }
-.button_box{
+
+.button_box {
   text-align: center;
 }
+
 .button {
   text-decoration: none;
   display: inline-block;
@@ -55,7 +57,7 @@
   background-color: #34353a;
   box-sizing: border-box;
   text-align: center;
-  margin: 10px 
+  margin: 10px
 }
 
 .button:after {
@@ -71,20 +73,24 @@
   border: 2px solid rgba(0, 0, 0, 0);
   transition: .4s;
 }
-.border_red{
+
+.border_red {
   border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
   border-image-slice: 1;
 }
+
 .border_red:hover:after {
   border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
   border-image-slice: 1;
   width: calc(100% - 10px);
   height: calc(100% + 10px);
 }
-.border_blue{
+
+.border_blue {
   border-image: linear-gradient(180deg, #005AFF, #0080FF, #00A6FF, #00CCFF, #00F2FF);
   border-image-slice: 1;
 }
+
 .border_blue:hover:after {
   border-image: linear-gradient(180deg, #005AFF, #0080FF, #00A6FF, #00CCFF, #00F2FF);
   border-image-slice: 1;

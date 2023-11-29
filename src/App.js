@@ -16,7 +16,7 @@ const App = (props) => {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/news" element={<News state={props.state.NewsPage} addNews={props.addNews} removeNews={props.removeNews} />} />
-          <Route path="/news/:id" element={<News_in state={props.state.NewsPage}/>} />
+          <Route path="/news/:id" element={<News_in state={props.state.NewsPage} />} />
         </Routes>
       </div>
     </div>
