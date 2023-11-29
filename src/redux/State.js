@@ -24,6 +24,8 @@ export let addNews = (newname, newdate, newimg, newdesc, newtext) =>{
   }
   state.NewsPage.news.push(newNews);
 }
-
+export let removeNews = (newsId) => {
+  state.NewsPage.news = state.NewsPage.news.filter(newsItem => newsItem.id !== newsId);
+}
 export default state;
 

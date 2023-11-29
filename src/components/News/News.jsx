@@ -14,7 +14,7 @@ const News = (props) => {
     });
 
     let NewsItem = props.state.news
-    .map(p => <News_element key={p.id} img={p.img} id={p.id} date={p.date} name={p.name} />)
+    .map(p => <News_element key={p.id} img={p.img} id={p.id} date={p.date} name={p.name} removeNews={props.removeNews} />)
     .reverse();
     let NewNewsName = React.createRef()
     let NewNewsDate = React.createRef()
