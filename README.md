@@ -1,3 +1,6 @@
+# Prject creation:
+Project was implemented by Danila Kulinkovich (kulinkovich.danila@student.ehu.lt) 
+ before starting, run: 'npm install' and to run use `npm start`
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
