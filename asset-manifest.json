@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/esde/static/css/main.1b8e9615.css",
+    "main.js": "/esde/static/js/main.0e07ff49.js",
+    "static/media/Banner.png": "/esde/static/media/Banner.b38dd3d4cd3904dfee13.png",
+    "static/media/Logo.png": "/esde/static/media/Logo.43e30f48794355580c1d.png",
+    "index.html": "/esde/index.html",
+    "main.1b8e9615.css.map": "/esde/static/css/main.1b8e9615.css.map",
+    "main.0e07ff49.js.map": "/esde/static/js/main.0e07ff49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b8e9615.css",
+    "static/js/main.0e07ff49.js"
+  ]
+}
