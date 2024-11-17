@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
-import { addNews, removeNews } from './redux/State';
+import { addNews, removeNews } from './state/State';
 
 export let renderEntireTree = (state) => {
   ReactDOM.render(

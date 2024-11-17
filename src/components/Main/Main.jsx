@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Main.module.css'
-import banner from '../Image/Banner.png'
+import banner from '../../img/Banner.png'
 
 const Main = () => {
     return (
@@ -17,7 +17,7 @@ const Main = () => {
                     <h2>National Code of the Study Program</h2>
                     <p>6121BX037</p>
                 </div>
-                <img src={banner} />
+                <img src={banner} alt='banner' />
             </div>
             <div><h2>Program Formats</h2>
                 <p><strong>The full-time program</strong> (with a course load of 30 credits per semester) <strong>is offered in two formats – on–campus and online.</strong> With on-campus learning, students live and study in Vilnius, attending classes both offline and online. The online format involves distance learning from Monday to Friday during the day, with two to three offline sessions of up to five days throughout the academic year. For online learning, students can be located in any country but must attend the on-campus sessions held on location in Vilnius.</p>

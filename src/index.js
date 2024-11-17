@@ -1,4 +1,4 @@
 import { renderEntireTree } from './render';
-import state from './redux/State';
+import state from './state/State';
 
 renderEntireTree(state);
