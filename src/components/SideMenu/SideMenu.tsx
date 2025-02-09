@@ -19,12 +19,10 @@ const SideMenu: React.FC<SideMenuProps> = ({ isActive, toggleMenu }) => {
         </button>
         <div className="side__content">
           <ul className="side__list">
-            <li><a href="#about">Про меня</a></li>
-            <li><a href="#experience">Опыт</a></li>
-            <li><a href="#skills">Навыки</a></li>
-            <li><a href="#portfolio">Портфолио</a></li>
-            <li><a href="#price">Прайс-лист</a></li>
-            <li><a href="#contact">Контакты</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#price">Price</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div className="side__icons">

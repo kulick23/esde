@@ -13,9 +13,24 @@ const Skills: React.FC = () => {
       <h2>Skills you will learn</h2>
       <div className="horizontal-bar line-centered"></div>
       <div className="skills__buttons">
-        <button onClick={() => setCategory('skillsFront')}>JS/TS</button>
-        <button onClick={() => setCategory('skillsBack')}>Java EE</button>
-        <button onClick={() => setCategory('skillsGame')}>.Net</button>
+        <button
+          className={category === 'skillsFront' ? '' : 'button__opacity'}
+          onClick={() => setCategory('skillsFront')}
+        >
+          JS/TS
+        </button>
+        <button
+          className={category === 'skillsBack' ? '' : 'button__opacity'}
+          onClick={() => setCategory('skillsBack')}
+        >
+          Java EE
+        </button>
+        <button
+          className={category === 'skillsGame' ? '' : 'button__opacity'}
+          onClick={() => setCategory('skillsGame')}
+        >
+          .Net
+        </button>
       </div>
       <div className="skills__container">
         {skills.map((skill) => (
@@ -25,7 +40,6 @@ const Skills: React.FC = () => {
           </div>
         ))}
       </div>
-   
     </section>
   );
 };

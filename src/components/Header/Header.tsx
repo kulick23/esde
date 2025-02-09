@@ -1,4 +1,6 @@
+
 import React from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './header.css';
 import hamburgerIcon from '../../Assets/Icons/Hamburger.svg';
 import telegramIcon from '../../Assets/Icons/telegram.svg';
@@ -11,6 +13,12 @@ type HeaderProps = {
 };
 
 const Header: React.FC<HeaderProps> = ({ onBurgerClick }) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const isHomeActive = location.pathname === '/';
+  const isNewsActive = location.pathname.startsWith('/news');
+
   return (
     <header className="header">
       <div className="header__left">
@@ -31,13 +39,21 @@ const Header: React.FC<HeaderProps> = ({ onBurgerClick }) => {
       <div className="header__container">
         <h1>Explore a Bachelor of Computer Science with us</h1>
         <div className="header__buttons">
-          <button data-target="#portfolio">Home page</button>
-          <button className="button__opacity" data-target="#about">
+          <button
+            className={isHomeActive ? '' : 'button__opacity'}
+            onClick={() => navigate('/')}
+          >
+            Home page
+          </button>
+          <button
+            className={isNewsActive ? '' : 'button__opacity'}
+            onClick={() => navigate('/news')}
+          >
             News page
           </button>
         </div>
         <img src={logo} alt="logo" />
-        </div>
+      </div>
       <div className="header__right">
         <button className="header__burger button__opacity" onClick={onBurgerClick}>
           <img src={hamburgerIcon} alt="Menu" />

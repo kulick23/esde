@@ -1,7 +1,7 @@
 
 import { configureStore } from '@reduxjs/toolkit';
 import skillsReducer from './features/skills/skillsSlice.ts';
-import newsReducer from './features/news/newsSlice';
+import newsReducer from './features/news/newsSlice.ts';
 
 const store = configureStore({
   reducer: {

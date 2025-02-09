@@ -1,0 +1,18 @@
+.NewsItemPage__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.NewsItemPage__secondary {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.NewsItemPage__secondary img {
+  max-width: 100%;
+}
