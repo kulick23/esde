@@ -1,10 +1,9 @@
-//// filepath: /c:/Users/Danila/Desktop/esde/src/components/About.tsx
 import React from 'react';
 import './about.css';
 import photo1 from '../../Assets/Img/photo1.jpeg';
 import webDevelopmentIcon from '../../Assets/Icons/web_development.svg';
-import mobileDevIcon from '../../Assets/Icons/mobile_dev.svg';
-import designIcon from '../../Assets/Icons/design.svg';
+import gameIcon from '../../Assets/Icons/design.svg';
+import backIcon from '../../Assets/Icons/Developer.svg';
 
 const About: React.FC = () => {
   return (
@@ -24,27 +23,27 @@ const About: React.FC = () => {
             </div>
             <div className="about__icon--text">
               <h4>JavaScript/TypeScript</h4>
-              <small>front-end develop </small>
+              <small>front-end development </small>
             </div>
           </div>
           <div className="about__block">
             <div className="about__icon">
               <div className="text-with-circle"></div>
-              <img className="about__icon" src={mobileDevIcon} alt="Mobile development" />
+              <img className="about__icon" src={backIcon} alt="Back development" />
             </div>
             <div className="about__icon--text">
               <h4>Java EE</h4>
-              <small>back-end develop </small>
+              <small>back-end development </small>
             </div>
           </div>
           <div className="about__block">
             <div className="about__icon">
               <div className="text-with-circle"></div>
-              <img className="about__icon" src={designIcon} alt="Design" />
+              <img className="about__icon" src={gameIcon} alt="Design" />
             </div>
             <div className="about__icon--text">
               <h4>.Net</h4>
-              <small>game develop </small>
+              <small>game development </small>
             </div>
           </div>
         </div>

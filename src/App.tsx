@@ -5,6 +5,7 @@ import Skills from './components/Skills/Skills.tsx';
 import Price from './components/Price/Price.tsx';
 import Contact from './components/Contact/Contact.tsx';
 import SideMenu from './components/SideMenu/SideMenu.tsx';
+import './styles/style.css';
 
 const App: React.FC = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);

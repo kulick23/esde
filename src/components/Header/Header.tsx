@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ onBurgerClick }) => {
     <header className="header">
       <div className="header__left">
         <div className="header__left--block">
-          <p>Социальные сети</p>
+          <p>Social media</p>
           <div className="header__line"></div>
           <a href="https://telegram.org/">
             <img src={telegramIcon} alt="Telegram" />
