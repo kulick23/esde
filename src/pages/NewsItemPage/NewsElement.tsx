@@ -24,7 +24,10 @@ const NewsElement: React.FC = () => {
         </div>
         <img src={newsItem.img} alt={newsItem.name} />
       </div>
-      <p>{newsItem.text}</p>
+      {typeof newsItem.text === 'string' 
+  ? <div><p>{newsItem.text}</p></div>
+  : React.cloneElement(newsItem.text)
+}
     </div>
   );
 };

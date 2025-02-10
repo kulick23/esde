@@ -31,7 +31,15 @@ const NewsPage: React.FC = () => {
       return;
     }
 
-    dispatch(addNews(formData));
+    const textElement = React.createElement('div', null, 
+      React.createElement('p', null, formData.text)
+    );
+  
+    dispatch(addNews({
+      ...formData,
+      text: textElement 
+    }));
+  
     setIsAdding(false);
     setFormData({
       name: '',
@@ -42,7 +50,6 @@ const NewsPage: React.FC = () => {
       type: 'University',
     });
   };
-
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {

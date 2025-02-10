@@ -17,7 +17,8 @@ const Header: React.FC<HeaderProps> = ({ onBurgerClick }) => {
   const location = useLocation();
 
   const isHomeActive = location.pathname === '/';
-  const isNewsActive = location.pathname.startsWith('/news');
+  const isNewsActive = location.pathname === '/news';
+
 
   return (
     <header className="header">

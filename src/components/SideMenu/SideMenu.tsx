@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './side.css';
 import closeIcon from '../../Assets/Icons/Close.svg';
 import telegramIcon from '../../Assets/Icons/telegram.svg';
@@ -11,6 +13,25 @@ type SideMenuProps = {
 };
 
 const SideMenu: React.FC<SideMenuProps> = ({ isActive, toggleMenu }) => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavigation = (section: string) => {
+    toggleMenu();
+    
+    if (location.pathname !== '/') {
+      // If we're not on home page, navigate to home and then scroll
+      navigate('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  };
+
   return (
     <>
       <nav className={`side__menu ${isActive ? 'active' : ''}`}>
@@ -19,10 +40,54 @@ const SideMenu: React.FC<SideMenuProps> = ({ isActive, toggleMenu }) => {
         </button>
         <div className="side__content">
           <ul className="side__list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#price">Price</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li>
+              <ScrollLink
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={() => handleNavigation('about')}
+              >
+                About
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={() => handleNavigation('skills')}
+              >
+                Skills
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                to="price"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={() => handleNavigation('price')}
+              >
+                Price
+              </ScrollLink>
+            </li>
+            <li>
+              <ScrollLink
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={() => handleNavigation('contact')}
+              >
+                Contact
+              </ScrollLink>
+            </li>
           </ul>
         </div>
         <div className="side__icons">

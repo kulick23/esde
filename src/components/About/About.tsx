@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import photo1 from '../../Assets/Img/photo1.jpeg';
+import photo1 from '../../Assets/Img/photo1.webp';
 import webDevelopmentIcon from '../../Assets/Icons/web_development.svg';
 import gameIcon from '../../Assets/Icons/design.svg';
 import backIcon from '../../Assets/Icons/Developer.svg';

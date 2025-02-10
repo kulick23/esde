@@ -1,6 +1,6 @@
 .header {
     min-height: 100vh;
-    background:url("../../Assets/Img/Banner.jpg") no-repeat right center;
+    background:url("../../Assets/Img/Banner.webp") no-repeat center center;
     background-size: cover;
     position: relative;
     color: white;

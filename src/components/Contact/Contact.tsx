@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contact.css';
-import photo2 from '../../Assets/Img/photo2.jpg';
+import photo2 from '../../Assets/Img/photo2.webp';
 import facebookIcon from '../../Assets/Icons/facebook.svg';
 import telegramIcon from '../../Assets/Icons/telegram.svg';
 import instagramIcon from '../../Assets/Icons/instagram.svg';
