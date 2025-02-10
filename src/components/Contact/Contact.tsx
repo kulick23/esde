@@ -25,9 +25,19 @@ const Contact: React.FC = () => {
         <div className="horizontal-bar"></div>
         <p>In any way convenient for you:</p>
         <div className="contact__links">
-          <a href="https://www.facebook.com/"><img className="contact__icon" src={facebookIcon} alt="Facebook" /></a>
-          <a href="https://telegram.org/"><img className="contact__icon" src={telegramIcon} alt="Telegram" /></a>
-          <a href="https://www.instagram.com/"><img className="contact__icon" src={instagramIcon} alt="Instagram" /></a>
+          <a href="https://www.facebook.com/">
+            <img className="contact__icon" src={facebookIcon} alt="Facebook" />
+          </a>
+          <a href="https://telegram.org/">
+            <img className="contact__icon" src={telegramIcon} alt="Telegram" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img
+              className="contact__icon"
+              src={instagramIcon}
+              alt="Instagram"
+            />
+          </a>
         </div>
         <p>Or leave your details and we will write to you ourselves:</p>
         <form className="form__container" onSubmit={handleSubmit}>
@@ -73,9 +83,13 @@ const Contact: React.FC = () => {
               onChange={(e) => setPrivacy(e.target.checked)}
               required
             />
-            <small>I agree with <small className="blue-text">privacy policy</small></small>
+            <small>
+              I agree with <small className="blue-text">privacy policy</small>
+            </small>
           </div>
-          <button className="contact__button" type="submit">Send message</button>
+          <button className="contact__button" type="submit">
+            Send message
+          </button>
         </form>
       </div>
     </section>

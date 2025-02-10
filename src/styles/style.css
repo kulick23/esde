@@ -1,174 +1,165 @@
 @font-face {
-    font-family: 'Montserrat-Regular';
-    src: url('../Assets/Fonts/Montserrat-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Montserrat-Regular';
+  src: url('../Assets/Fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../Assets/Fonts/Montserrat-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Montserrat-Bold';
+  src: url('../Assets/Fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-    --font-bold: 'Montserrat-Bold', Arial, sans-serif;
-    --font-regular: 'Montserrat-Regular', Arial, sans-serif;
-    --page-margin: 15%;
-    --color-secondary: #00bfd6;
-    --color-black: black;
-    --color-white: white;
-
+  --font-bold: 'Montserrat-Bold', Arial, sans-serif;
+  --font-regular: 'Montserrat-Regular', Arial, sans-serif;
+  --page-margin: 15%;
+  --color-secondary: #00bfd6;
+  --color-black: black;
+  --color-white: white;
 }
 
 body {
-    margin: 0%;
+  margin: 0%;
 }
 
 p,
 small,
 a,
 label {
-    font-family: var(--font-regular);
-    font-weight: 700;
-
+  font-family: var(--font-regular);
+  font-weight: 700;
 }
 
 label {
-    font-weight: 100;
-
+  font-weight: 100;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    margin-block-start: 0.50em;
-    margin-block-end: 0.50em;
-    font-family: var(--font-bold);
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  font-family: var(--font-bold);
 }
 
 h1 {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 h2 {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 h4 {
-    margin-block-start: 0em;
+  margin-block-start: 0em;
 }
 
 button {
-    background: none;
-    background-color: var(--color-secondary);
-    padding: 17px 25px;
-    border: none;
-    font-family: var(--font-bold);
-    font-size: 1rem;
-    cursor: pointer;
+  background: none;
+  background-color: var(--color-secondary);
+  padding: 17px 25px;
+  border: none;
+  font-family: var(--font-bold);
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 input {
-    cursor: pointer;
-
+  cursor: pointer;
 }
 
 a {
-    cursor: pointer;
-    color: var(--color-white);
-    text-decoration: none;
-
+  cursor: pointer;
+  color: var(--color-white);
+  text-decoration: none;
 }
 
 main {
-    margin: 0 var(--page-margin);
-
+  margin: 0 var(--page-margin);
 }
 
 .button__opacity {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .line-centered {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
 }
-
 
 .text-with-circle,
 .text-centre-circle {
-    position: relative;
-    z-index: 0;
+  position: relative;
+  z-index: 0;
 }
 
 .text-with-circle::before,
 .text-centre-circle::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translate(-50%, -50%);
-    width: 36px;
-    height: 36px;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
-    z-index: -1;
-    display: inline-block;
-
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  z-index: -1;
+  display: inline-block;
 }
 
 .text-centre-circle::before {
-    top: 50%;
-    left: 50%;
+  top: 50%;
+  left: 50%;
 }
 
 .horizontal-bar {
-    width: 60px;
-    height: 3px;
-    background-color: var(--color-secondary);
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-secondary);
 }
 
 .blue-text {
-    color: blue;
+  color: blue;
 }
 
 @media (max-width: 768px) {
-    :root {
-        --page-margin: 5%;
-    }
+  :root {
+    --page-margin: 5%;
+  }
 
-    h3 {
-        font-size: 1rem;
-    }
+  h3 {
+    font-size: 1rem;
+  }
 
-    h1 {
-        font-size: 1.5rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+  }
 
-    h2 {
-        font-size: 1.2rem;
-    }
+  h2 {
+    font-size: 1.2rem;
+  }
 
-    h4 {
-        font-size: 0.8rem;
-    }
+  h4 {
+    font-size: 0.8rem;
+  }
 
-    p {
-        font-size: 0.8rem;
-    }
+  p {
+    font-size: 0.8rem;
+  }
 
-    small {
-        font-size: 0.7rem;
-    }
+  small {
+    font-size: 0.7rem;
+  }
 
-    button {
-        padding: 12px 12px;
-        font-size: 1rem;
-
-    }
+  button {
+    padding: 12px 12px;
+    font-size: 1rem;
+  }
 }

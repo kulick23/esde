@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../../store/store.ts';
@@ -26,20 +25,30 @@ const NewsPage: React.FC = () => {
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.date || !formData.description || !formData.text || !formData.imageUrl) {
+    if (
+      !formData.name ||
+      !formData.date ||
+      !formData.description ||
+      !formData.text ||
+      !formData.imageUrl
+    ) {
       alert('Please fill in all fields');
       return;
     }
 
-    const textElement = React.createElement('div', null, 
-      React.createElement('p', null, formData.text)
+    const textElement = React.createElement(
+      'div',
+      null,
+      React.createElement('p', null, formData.text),
     );
-  
-    dispatch(addNews({
-      ...formData,
-      text: textElement 
-    }));
-  
+
+    dispatch(
+      addNews({
+        ...formData,
+        text: textElement,
+      }),
+    );
+
     setIsAdding(false);
     setFormData({
       name: '',
@@ -51,10 +60,12 @@ const NewsPage: React.FC = () => {
     });
   };
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({ ...prevState, [name]: value }));
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
   };
 
   return (
@@ -119,7 +130,7 @@ const NewsPage: React.FC = () => {
         )}
 
         <div className="news__items">
-          {news.map(newsItem => (
+          {news.map((newsItem) => (
             <NewsPageElement
               key={newsItem.id}
               {...newsItem}

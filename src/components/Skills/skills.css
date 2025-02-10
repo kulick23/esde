@@ -1,61 +1,58 @@
 #skills {
-    text-align: center;
-    margin-top: 100px;
+  text-align: center;
+  margin-top: 100px;
 }
 
 .skills__container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    margin-top: 30px;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+  overflow: hidden;
 }
-.skills__buttons{
-    justify-content: center;
-    display: flex;
-    gap: 20px;
-    margin-top: 50px;
-
+.skills__buttons {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
 }
 .skill {
-    border: 1px solid var(--color-black);
-    padding: 30px;
-    text-align: left;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    box-sizing: border-box;
+  border: 1px solid var(--color-black);
+  padding: 30px;
+  text-align: left;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .skill h4 {
-    margin-top: 40px;
-text-align: center;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .skill img {
-    display: flex;
-    justify-self: center;
-    width: auto;
-    height:  70px;
+  display: flex;
+  justify-self: center;
+  width: auto;
+  height: 70px;
 }
 
 .skill small {
-    font-size: 1.5vh;
+  font-size: 1.5vh;
 }
 
 @media (max-width: 768px) {
-    .skills__container {
-        display: flex;
-        flex-direction: column;
-    }
+  .skills__container {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .skill h4 {
+    margin-top: 15px;
+    margin-block-end: 4vh;
+  }
 
-    .skill h4 {
-        margin-top: 15px;
-        margin-block-end: 4vh;
-
-    }
-
-    .skill small {
-        font-size: 2vh;
-    }
+  .skill small {
+    font-size: 2vh;
+  }
 }

@@ -1,53 +1,52 @@
 #price {
-    text-align: center;
-    margin-top: 80px;
+  text-align: center;
+  margin-top: 80px;
 }
 
 .price__list {
-    margin-top: 80px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: left;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
 .price__column {
-    flex: 1 1 300px;
-    max-width: 400px;
+  flex: 1 1 300px;
+  max-width: 400px;
 }
 
 .price__item {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .price__text {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .price__text p {
-text-align: end;
+  text-align: end;
 }
 
-
 .price__text h4 {
-    position: relative;
+  position: relative;
 }
 
 .price__text h4::before {
-    content: '';
-    position: absolute;
-    left: -25px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 15px;
-    height: 15px;
-    background-color: var(--color-secondary);
-    border-radius: 50%;
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
 }
 @media (max-width: 768px) {
-.price__text h4 {
-margin-left: 20px;
-}
+  .price__text h4 {
+    margin-left: 20px;
+  }
 }

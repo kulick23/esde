@@ -7,7 +7,9 @@ import './NewsElement.css';
 const NewsElement: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const news = useSelector((state: RootState) => state.news.news);
-  const newsItem = id ? news.find(item => item.id === parseInt(id)) : undefined;
+  const newsItem = id
+    ? news.find((item) => item.id === parseInt(id))
+    : undefined;
 
   if (!newsItem) {
     return <div>News not found</div>;
@@ -24,10 +26,13 @@ const NewsElement: React.FC = () => {
         </div>
         <img src={newsItem.img} alt={newsItem.name} />
       </div>
-      {typeof newsItem.text === 'string' 
-  ? <div><p>{newsItem.text}</p></div>
-  : React.cloneElement(newsItem.text)
-}
+      {typeof newsItem.text === 'string' ? (
+        <div>
+          <p>{newsItem.text}</p>
+        </div>
+      ) : (
+        React.cloneElement(newsItem.text)
+      )}
     </div>
   );
 };

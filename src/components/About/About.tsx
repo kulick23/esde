@@ -14,7 +14,16 @@ const About: React.FC = () => {
         <h2>Specialty Description</h2>
         <div className="horizontal-bar"></div>
         <div className="line"></div>
-        <p>EPAM School of Digital Engineering (ESDE) is an experimental division of EPAM in which bachelor’s and master’s degree programs are offered in partnership with traditional universities or new types of educational institutions. Similar projects are already operating in Ukraine, Poland, Uzbekistan, and other countries. ESDE opened in Lithuania in partnership with the European Humanities University in 2022. Beginning with the first semester, students can choose one of three specializations – Java EE, .Net, or JavaScript/TypeScript.</p>
+        <p>
+          EPAM School of Digital Engineering (ESDE) is an experimental division
+          of EPAM in which bachelor’s and master’s degree programs are offered
+          in partnership with traditional universities or new types of
+          educational institutions. Similar projects are already operating in
+          Ukraine, Poland, Uzbekistan, and other countries. ESDE opened in
+          Lithuania in partnership with the European Humanities University in
+          2022. Beginning with the first semester, students can choose one of
+          three specializations – Java EE, .Net, or JavaScript/TypeScript.
+        </p>
         <div className="about__blocks">
           <div className="about__block">
             <div className="about__icon">
@@ -29,7 +38,11 @@ const About: React.FC = () => {
           <div className="about__block">
             <div className="about__icon">
               <div className="text-with-circle"></div>
-              <img className="about__icon" src={backIcon} alt="Back development" />
+              <img
+                className="about__icon"
+                src={backIcon}
+                alt="Back development"
+              />
             </div>
             <div className="about__icon--text">
               <h4>Java EE</h4>

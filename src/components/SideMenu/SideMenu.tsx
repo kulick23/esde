@@ -18,7 +18,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ isActive, toggleMenu }) => {
 
   const handleNavigation = (section: string) => {
     toggleMenu();
-    
+
     if (location.pathname !== '/') {
       // If we're not on home page, navigate to home and then scroll
       navigate('/');
@@ -91,12 +91,21 @@ const SideMenu: React.FC<SideMenuProps> = ({ isActive, toggleMenu }) => {
           </ul>
         </div>
         <div className="side__icons">
-          <a href="https://telegram.org/"><img src={telegramIcon} alt="Telegram" /></a>
-          <a href="https://www.instagram.com/"><img src={instagramIcon} alt="Instagram" /></a>
-          <a href="https://www.facebook.com/"><img src={facebookIcon} alt="Facebook" /></a>
+          <a href="https://telegram.org/">
+            <img src={telegramIcon} alt="Telegram" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src={instagramIcon} alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/">
+            <img src={facebookIcon} alt="Facebook" />
+          </a>
         </div>
       </nav>
-      <div className={`side__overlay ${isActive ? 'active' : ''}`} onClick={toggleMenu}></div>
+      <div
+        className={`side__overlay ${isActive ? 'active' : ''}`}
+        onClick={toggleMenu}
+      ></div>
     </>
   );
 };

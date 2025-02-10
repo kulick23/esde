@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Header, SideMenu, About, Skills, Price, Contact} from './components/index.ts';
-import { HomePage, NewsItemPage, NewsPage} from './pages/index.ts';
+import {
+  Header,
+  SideMenu,
+  About,
+  Skills,
+  Price,
+  Contact,
+} from './components/index.ts';
+import { HomePage, NewsItemPage, NewsPage } from './pages/index.ts';
 import './styles/style.css';
 
 const App: React.FC = () => {

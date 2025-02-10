@@ -4,7 +4,9 @@ import { RootState } from '../../store/store.ts';
 import './skills.css';
 
 const Skills: React.FC = () => {
-  const [category, setCategory] = useState<'skillsFront' | 'skillsBack' | 'skillsGame'>('skillsFront');
+  const [category, setCategory] = useState<
+    'skillsFront' | 'skillsBack' | 'skillsGame'
+  >('skillsFront');
   const skills = useSelector((state: RootState) => state.skills[category]);
 
   return (

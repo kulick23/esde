@@ -1,95 +1,91 @@
 .header {
-    min-height: 100vh;
-    background:url("../../Assets/Img/Banner.webp") no-repeat center center;
-    background-size: cover;
-    position: relative;
-    color: white;
+  min-height: 100vh;
+  background: url('../../Assets/Img/Banner.webp') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  color: white;
 }
 
 .header__left,
 .header__container,
 .header__right {
-    position: absolute;
-    top: 0;
-    height: 100vh;
+  position: absolute;
+  top: 0;
+  height: 100vh;
 }
 
 .header__left {
-    width: var(--page-margin);
+  width: var(--page-margin);
 }
 
 .header__left--block {
-    display: flex;
-    transform: rotate(270deg);
-    transform-origin: left center;
-    margin-top: 70vh;
-    margin-left: 40px;
-    align-items: center;
-    gap: 10px;
-    width: 340px;
-    
+  display: flex;
+  transform: rotate(270deg);
+  transform-origin: left center;
+  margin-top: 70vh;
+  margin-left: 40px;
+  align-items: center;
+  gap: 10px;
+  width: 340px;
 }
-.header__left--block img{
-    filter: invert(100%) brightness(100%);
-    height: 20px;
-    width: auto;
-
+.header__left--block img {
+  filter: invert(100%) brightness(100%);
+  height: 20px;
+  width: auto;
 }
 
 .header__left--block p {
-    white-space: nowrap;
-    font-family: var(--font-bold);
+  white-space: nowrap;
+  font-family: var(--font-bold);
 }
 
 .header__line {
-    width: 100%;
-    height: 2px;
-    background-color: white;
+  width: 100%;
+  height: 2px;
+  background-color: white;
 }
 
 .header__container {
-    left: var(--page-margin);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 15vh;
-    width: 40vw;
+  left: var(--page-margin);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 15vh;
+  width: 40vw;
 }
 .header__container img {
-    width: 75%;
-    height: auto;
-    margin-top: 15vh;
+  width: 75%;
+  height: auto;
+  margin-top: 15vh;
 }
 .header__buttons {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 .header__buttons button {
-    color: white;
+  color: white;
 }
 .header__right {
-    width: var(--page-margin);
-    right: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: self-start;
+  width: var(--page-margin);
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: self-start;
 }
 
 .header__burger {
-    margin-right: 10px;
-    margin-top: 3vh;
-    filter: invert(100%) brightness(100%);
-
+  margin-right: 10px;
+  margin-top: 3vh;
+  filter: invert(100%) brightness(100%);
 }
 
 @media (max-width: 768px) {
-    .header__left{
-        display: none;
-    }
-    .header__container {
-        width: 90%;
-        gap: 20px;
-        padding-top: 30vh;
-
-    }
+  .header__left {
+    display: none;
+  }
+  .header__container {
+    width: 90%;
+    gap: 20px;
+    padding-top: 30vh;
+  }
 }

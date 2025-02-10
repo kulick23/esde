@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './NewsPageElement.css'; 
+import './NewsPageElement.css';
 
 interface NewsPageElementProps {
   id: number;

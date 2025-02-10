@@ -42,7 +42,6 @@ const initialState: SkillsState = {
     { id: 5, name: 'React', icon: reactIcon },
     { id: 6, name: 'Node.js', icon: nodejsIcon },
     { id: 7, name: 'PostgreSQL', icon: postgresqlIcon },
-
   ],
   skillsBack: [
     { id: 1, name: 'Java', icon: javaIcon },
@@ -66,7 +65,13 @@ const skillsSlice = createSlice({
   name: 'skills',
   initialState,
   reducers: {
-    addSkill: (state, action: PayloadAction<{ category: keyof SkillsState; skill: Omit<Skill, 'id'> }>) => {
+    addSkill: (
+      state,
+      action: PayloadAction<{
+        category: keyof SkillsState;
+        skill: Omit<Skill, 'id'>;
+      }>,
+    ) => {
       const { category, skill } = action.payload;
       const newSkill = {
         id: state[category].length + 1,
@@ -74,9 +79,12 @@ const skillsSlice = createSlice({
       };
       state[category].push(newSkill);
     },
-    removeSkill: (state, action: PayloadAction<{ category: keyof SkillsState; id: number }>) => {
+    removeSkill: (
+      state,
+      action: PayloadAction<{ category: keyof SkillsState; id: number }>,
+    ) => {
       const { category, id } = action.payload;
-      state[category] = state[category].filter(skill => skill.id !== id);
+      state[category] = state[category].filter((skill) => skill.id !== id);
     },
   },
 });

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './header.css';
@@ -18,7 +17,6 @@ const Header: React.FC<HeaderProps> = ({ onBurgerClick }) => {
 
   const isHomeActive = location.pathname === '/';
   const isNewsActive = location.pathname === '/news';
-
 
   return (
     <header className="header">
@@ -56,7 +54,10 @@ const Header: React.FC<HeaderProps> = ({ onBurgerClick }) => {
         <img src={logo} alt="logo" />
       </div>
       <div className="header__right">
-        <button className="header__burger button__opacity" onClick={onBurgerClick}>
+        <button
+          className="header__burger button__opacity"
+          onClick={onBurgerClick}
+        >
           <img src={hamburgerIcon} alt="Menu" />
         </button>
       </div>

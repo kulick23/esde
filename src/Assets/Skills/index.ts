@@ -18,13 +18,6 @@ import mayaIcon from './maya.webp';
 import substanceIcon from './substance.webp';
 import unrealIcon from './UnrealEngine.webp';
 
-
-
-
-
-
-
-
 export {
   html5Icon,
   css3Icon,
@@ -45,5 +38,4 @@ export {
   mayaIcon,
   substanceIcon,
   unrealIcon,
-
 };

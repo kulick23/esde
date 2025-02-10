@@ -5,7 +5,9 @@ import './price.css';
 const Price: React.FC = () => {
   return (
     <section id="price">
-      <h3 className="text-centre-circle">Tuition for applicants per semester</h3>
+      <h3 className="text-centre-circle">
+        Tuition for applicants per semester
+      </h3>
       <div className="horizontal-bar line-centered"></div>
       <div className="price__list">
         <div className="price__column">
@@ -32,7 +34,6 @@ const Price: React.FC = () => {
             </div>
             <small>sessional</small>
           </div>
-   
         </div>
       </div>
     </section>
